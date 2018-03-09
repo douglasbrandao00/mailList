@@ -1,2 +1,2 @@
 # mailList
-A fullStack app to send email from costumers
+A fullStack app to send email for costumers
