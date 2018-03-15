@@ -1,6 +1,5 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const morgan = require('morgan')
 const mongoose = require('mongoose')
 const cookieSession = require('cookie-session')
 const passport = require('passport')
@@ -25,7 +24,6 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.use(bodyParser.json())
-app.use(morgan('tiny'))
 app.use('/', routes)
 
 module.exports = app
